@@ -143,16 +143,16 @@ def avg_data_2018():
     
 
 if __name__=="__main__":
-    lst2013=avg_data_2013()
-    lst2014=avg_data_2014()
-    lst2015=avg_data_2015()
-    lst2016=avg_data_2016()
-    lst2017=avg_data_2017()
-    lst2018=avg_data_2018()
+    lst2013 = avg_data_2013()
+    lst2014 = avg_data_2014()
+    lst2015 = avg_data_2015()
+    lst2016 = avg_data_2016()
+    lst2017 = avg_data_2017()
+    lst2018 = avg_data_2018()
     plt.plot(range(0,365),lst2013,label="2013 data")
     plt.plot(range(0,364),lst2014,label="2014 data")
     plt.plot(range(0,365),lst2015,label="2015 data")
-    plt.plot(range(0,121),lst2016,label="2016 data")
+    #plt.plot(range(0,121),lst2016,label="2016 data")
     plt.xlabel('Day')
     plt.ylabel('PM 2.5')
     plt.legend(loc='upper right')

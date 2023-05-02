@@ -56,12 +56,12 @@ def data_combine(year, cs):
 if __name__ == "__main__":
     if not os.path.exists("Data/Real-Data"):
         os.makedirs("Data/Real-Data")
+        
     for year in range(2013, 2017):
         final_data = []
         with open('Data/Real-Data/real_' + str(year) + '.csv', 'w') as csvfile:
             wr = csv.writer(csvfile, dialect='excel')
-            wr.writerow(
-                ['T', 'TM', 'Tm', 'SLP', 'H', 'VV', 'V', 'VM', 'PM 2.5'])
+            wr.writerow(['T', 'TM', 'Tm', 'SLP', 'H', 'VV', 'V', 'VM', 'PM 2.5'])
         for month in range(1, 13):
             temp = met_data(month, year)
             final_data = final_data + temp
